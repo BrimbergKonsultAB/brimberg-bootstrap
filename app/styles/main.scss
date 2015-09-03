@@ -1,8 +1,10 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $color_1: #eeee55;
-$color_2: #88dd88;
-$color_3: #eee;
+$color_2: #ddd;
+$color_3: #888;
 $color_bg: $color_3;
+$first_page_height: 98vh;
+$first_page_rest: 2vh;
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
@@ -14,7 +16,7 @@ body {
 }
 #myOne {
     background: $color_1;
-    height: 100vh;
+    height: $first_page_height;
 }
 #myTwo {
     background: $color_2;
@@ -41,16 +43,19 @@ body {
     }
 }
 .glyphicon.glyphicon-large {
-    font-size: 1.2em;
+    font-size: 2em;
 }
-.glyph-lang-image {
+.lang-image {
     position: fixed;
     bottom: 10px;
     right: 10px;
     z-index: 999;
 }
-.glyphicon-arrow-down {
-    position: fixed;
-    bottom: 10px;
-    right: 50%;
+.bee {
+    position: absolute;
+    bottom: $first_page_rest+1;
+    right: 1vw;
+    max-width: 98vw;
+    max-height: $first_page_height;
+    opacity: 0.6;
 }

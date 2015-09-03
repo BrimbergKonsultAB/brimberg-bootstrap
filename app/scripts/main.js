@@ -21,7 +21,7 @@ function rotateLanguage() {
 $(document).ready(function () {
     $('.' + langOptions[1]).hide();
 
-    $(".glyph-lang-image").on('click', function () {
+    $(".lang-image").on('click', function () {
         rotateLanguage();
     });
 });
