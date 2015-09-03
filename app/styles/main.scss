@@ -1,59 +1,56 @@
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
-
+$color_1: #eeee55;
+$color_2: #88dd88;
+$color_3: #eee;
+$color_bg: $color_3;
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
-
 body {
-    background: #ccc;
+    background: $color_bg;
 }
-
-#myOne, #myTwo, #myThree {
+.jumbotron {
+    background: $color_1;
+}
+#myOne {
+    background: $color_1;
     height: 100vh;
-    width: 200vw;
-    
-    div {
-        width: 100vw;
+}
+#myTwo {
+    background: $color_2;
+}
+#myThree {
+    background: $color_3;
+}
+.cv-frame {
+    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.swedish {
+    .cv-frame {
+        height: 157em;
+        width: 58em;
+        max-width: 96vw;
     }
 }
-
-#myOne{
-    background: #ccf;
+.english {
+    .cv-frame {
+        height: 170em;
+        width: 58em;
+    }
 }
-
-#myTwo{
-    background: #cfc;
-}
-
-#myThree{
-    background: #fcc;
-}
-
-#up{
-    position: fixed;
-    left: 50%;
-    top: 10px;
-}
-
-#down{
-    position: fixed;
-    left: 50%;
-    top: 90%;
-}
-
-#left{
-    position: fixed;
-    top: 50%;
-    left: 10px;
-}
-
-#right{
-    position: fixed;
-    top: 50%;
-    right: 10px;
-}
-
-span.glyphicon {
-    color: #620404;
+.glyphicon.glyphicon-large {
     font-size: 1.2em;
+}
+.glyph-lang-image {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+}
+.glyphicon-arrow-down {
+    position: fixed;
+    bottom: 10px;
+    right: 50%;
 }
