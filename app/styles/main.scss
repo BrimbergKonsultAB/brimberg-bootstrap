@@ -28,19 +28,9 @@ body {
     overflow: hidden;
     overflow-x: hidden;
     overflow-y: hidden;
-}
-.swedish {
-    .cv-frame {
-        height: 157em;
-        width: 58em;
-        max-width: 96vw;
-    }
-}
-.english {
-    .cv-frame {
-        height: 170em;
-        width: 58em;
-    }
+    max-width: 96vw;
+    width: 40em;
+    height: 168em;
 }
 .glyphicon.glyphicon-large {
     font-size: 2em;
