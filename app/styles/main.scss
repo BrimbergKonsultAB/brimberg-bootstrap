@@ -5,14 +5,22 @@ $color_3: #888;
 $color_bg: $color_3;
 $first_page_height: 98vh;
 $first_page_rest: 2vh;
+
+@font-face {
+    font-family: "American Typewriter";
+    src: url(fonts/AmericanTypewriter.ttc) format("truetype");
+}
+
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 body {
     background: $color_bg;
+    font-family: 'Hoefler Text', Garamond, Georgia, 'Times New Roman', Times, serif;
 }
 .jumbotron {
     background: $color_1;
+    font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
 }
 #myOne {
     background: $color_1;
@@ -22,7 +30,9 @@ body {
     background: $color_2;
 }
 #myThree {
-    background: $color_3;
+    //background: $color_3;
+    background-image: url(../images/hexagonal-repeating.png);
+    background-repeat: repeat;
 }
 .cv-frame {
     overflow: hidden;
