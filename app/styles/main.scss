@@ -2,7 +2,8 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $color_1: #eeee55;
 $color_2: #ddd;
 $color_3: #888;
-$color_bg: $color_3;
+$color_4: #050505;
+$color_bg: $color_4;
 $first_page_height: 98vh;
 $first_page_rest: 2vh;
 
@@ -33,6 +34,11 @@ body {
     //background: $color_3;
     background-image: url(../images/hexagonal-repeating.png);
     background-repeat: repeat;
+}
+#myFour {
+    background: $color_4;
+    color: aliceblue;
+    text-align: center;
 }
 .cv-frame {
     overflow: hidden;
