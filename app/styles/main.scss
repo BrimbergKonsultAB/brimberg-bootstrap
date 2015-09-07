@@ -4,12 +4,12 @@ $color_2: #ddd;
 $color_3: #888;
 $color_4: #050505;
 $color_bg: $color_4;
-$first_page_height: 98vh;
-$first_page_rest: 2vh;
+$first_page_height: 94vh;
+$first_page_rest: 6vh;
 
 @font-face {
     font-family: "American Typewriter";
-    src: url(fonts/AmericanTypewriter.ttc) format("truetype");
+    src: url(../fonts/AmericanTypewriter.ttf) format("truetype");
 }
 
 // bower:scss
