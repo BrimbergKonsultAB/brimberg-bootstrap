@@ -24,21 +24,27 @@ body {
     font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
 }
 #myOne {
-    background: $color_1;
+    //background: $color_1;
     height: $first_page_height;
+    background-image: url(../images/hexagonal-repeating-honey.png);
+    background-repeat: repeat;
 }
 #myTwo {
-    background: $color_2;
+    //background: $color_2;
+    background-image: url(../images/hexagonal-repeating-grey.png);
+    background-repeat: repeat;
+    border: 0 solid white;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
 }
 #myThree {
-    //background: $color_3;
-    background-image: url(../images/hexagonal-repeating.png);
-    background-repeat: repeat;
+    background: $color_3;
 }
 #myFour {
     background: $color_4;
     color: aliceblue;
     text-align: center;
+
 }
 .cv-frame {
     overflow: hidden;
@@ -62,8 +68,8 @@ body {
     bottom: $first_page_rest+1;
     right: 1vw;
     max-width: 98vw;
-    max-height: $first_page_height;
-    opacity: 0.6;
+    max-height: $first_page_height/3;
+    opacity: 0.4;
     
 }
 img:hover.lang-image {
