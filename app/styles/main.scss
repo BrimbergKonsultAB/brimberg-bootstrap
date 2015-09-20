@@ -1,3 +1,6 @@
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
 $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 $color_1: #eeee55;
 $color_2: #ddd;
@@ -6,13 +9,11 @@ $color_4: #050505;
 $color_bg: $color_4;
 $first_page_height: 94vh;
 $first_page_rest: 6vh;
+@import "font-awesome.css";
 @font-face {
 	font-family: "American Typewriter";
 	src: url(fonts/AmericanTypewriter.ttf) format("truetype");
 }
-// bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-// endbower
 body {
 	background: $color_bg;
 	font-family: 'Hoefler Text', Garamond, Georgia, 'Times New Roman', Times, serif;
