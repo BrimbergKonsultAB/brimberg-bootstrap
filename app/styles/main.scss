@@ -6,78 +6,75 @@ $color_4: #050505;
 $color_bg: $color_4;
 $first_page_height: 94vh;
 $first_page_rest: 6vh;
-
 @font-face {
-    font-family: "American Typewriter";
-    src: url(fonts/AmericanTypewriter.ttf) format("truetype");
+	font-family: "American Typewriter";
+	src: url(fonts/AmericanTypewriter.ttf) format("truetype");
 }
-
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 body {
-    background: $color_bg;
-    font-family: 'Hoefler Text', Garamond, Georgia, 'Times New Roman', Times, serif;
+	background: $color_bg;
+	font-family: 'Hoefler Text', Garamond, Georgia, 'Times New Roman', Times, serif;
 }
 .jumbotron {
-    background: $color_1;
-    font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
-    text-shadow: 0.1em 0.3em #eee;
+	background: $color_1;
+	font-family: 'American Typewriter', 'Courier New', Courier, Monaco, mono;
+	text-shadow: 0.1em 0.3em #eee;
 }
 #myOne {
-    //background: $color_1;
-    height: $first_page_height;
-    background-image: url(../images/hexagonal-repeating-honey.png);
-    background-repeat: repeat;
+	//background: $color_1;
+	height: $first_page_height;
+	background-image: url(../images/hexagonal-repeating-honey.png);
+	background-repeat: repeat;
+	background-position: left bottom;
+	border-top-width: 1px;
 }
 #myTwo {
-    //background: $color_2;
-    background-image: url(../images/hexagonal-repeating-grey.png);
-    background-repeat: repeat;
-    border: 0 solid white;
-    border-top-width: 1px;
-    border-bottom-width: 1px;
+	//background: $color_2;
+	background-image: url(../images/hexagonal-repeating-grey.png);
+	background-repeat: repeat;
+	border: 0 solid white;
+	border-bottom-width: 1px;
 }
 #myThree {
-    background: $color_3;
+	background: $color_3;
 }
 #myFour {
-    background: $color_4;
-    color: aliceblue;
-    text-align: center;
-
+	background: $color_4;
+	color: aliceblue;
+	text-align: center;
 }
 .cv-frame {
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    max-width: 96vw;
-    width: 40em;
-    height: 168em;
+	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	max-width: 96vw;
+	width: 40em;
+	height: 168em;
 }
 .glyphicon.glyphicon-large {
-    font-size: 2em;
+	font-size: 2em;
 }
 .lang-image {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 999;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 999;
 }
 .bee {
-    position: absolute;
-    bottom: $first_page_rest+1;
-    right: 1vw;
-    max-width: 98vw;
-    max-height: $first_page_height/3;
-    opacity: 0.4;
-    
+	position: absolute;
+	bottom: $first_page_rest+1;
+	right: 1vw;
+	max-width: 98vw;
+	max-height: $first_page_height/3;
+	opacity: 0.4;
 }
 img:hover.lang-image {
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-        -webkit-box-shadow: 0px 0px 30px 0px rgba(255, 29, 0, 0.67);
-        -moz-box-shadow: 0px 0px 30px 0px rgba(255, 29, 0, 0.67);
-        box-shadow: 0px 0px 30px 0px rgba(255, 29, 0, 0.67);
-    }
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	-webkit-box-shadow: 0px 0px 30px 0px rgba(255, 29, 0, 0.67);
+	-moz-box-shadow: 0px 0px 30px 0px rgba(255, 29, 0, 0.67);
+	box-shadow: 0px 0px 30px 0px rgba(255, 29, 0, 0.67);
+}
