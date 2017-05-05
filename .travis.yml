@@ -1,3 +1,4 @@
+sudo: false
 language: node_js
 node_js:
   - "7"
@@ -6,5 +7,7 @@ before_install:
 install: 
   - npm install 
   - bower install
-before_script: grunt build
+  - grunt build
+
+#before_script: grunt build
 
